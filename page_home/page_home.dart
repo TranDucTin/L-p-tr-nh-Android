@@ -8,7 +8,9 @@ import '../grid_view/picker.dart';
 import '../list_view/page_listview.dart';
 import '../my_profile/gioi_thieuSP.dart';
 import '../my_profile/page_profile.dart';
+import '../provider/catalog2.dart';
 import '../provider/exam_provider.dart';
+import '../share_preferences/page_sharepreferences.dart';
 
 class PageHome extends StatefulWidget {
   const PageHome ({Key? key}) : super(key: key);
@@ -97,11 +99,11 @@ class _State extends State<PageHome> {
                     minimumSize: Size(150, 40),
                   ),
                   onPressed: () {
-                    Navigator.push(context, MaterialPageRoute(builder:(context) => ShowSlider(),
+                    Navigator.push(context, MaterialPageRoute(builder:(context) => ListSP(),
                     ),
                     );
                   },
-                  child: Text("Provider_Exam",)),
+                  child: Text("SharePreferences",)),
             ],
           ),
     ),

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_dtin62cntt/form/form_page.dart';
 import 'package:flutter_dtin62cntt/my_profile/page_profile.dart';
 import 'package:flutter_dtin62cntt/page_home/page_home.dart';
+import 'package:flutter_dtin62cntt/provider/catalog_app.dart';
 
 import 'grid_view/page_gridview2.dart';
 import 'list_view/page_listview.dart';
@@ -9,6 +10,7 @@ import 'list_view/page_listview.dart';
 void main() {
   runApp(const MyApp());
 }
+// void main() => runApp(GetMaterialApp(home: HomeGetX()));
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -35,6 +37,8 @@ class MyApp extends StatelessWidget {
      //  home: PageFormDienThoai(),
       home: PageHome(),
      //  home: PageListView(),
+
+      // home: HomeGetX(),
     );
   }
 }
